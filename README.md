@@ -19,6 +19,6 @@ Here I used the following packages / things:
 
 2. Tailwind
 - Follow instructions [here](https://tailwindcss.com/docs/guides/create-react-app)
-- Do smth in App.js: e.g. remove existing code and add a simple <h1> tag with a couple of Tailwind classes.
+- Do smth in App.js: e.g. remove existing code and add a simple \<h1\> tag with a couple of Tailwind classes.
 
 3. 
