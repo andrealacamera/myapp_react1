@@ -20,3 +20,7 @@ Here I used the following packages / things:
 - Follow instructions [here](https://tailwindcss.com/docs/guides/create-react-app)
 - Do smth in App.js: e.g. remove existing code and add a simple \<h1\> tag with a couple of Tailwind classes.
 
+<<<<<<< HEAD
+=======
+3. 
+>>>>>>> 4632e9e30499f26e965ed134e827d666523ee386
