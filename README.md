@@ -8,7 +8,7 @@ Here I used the following packages / things:
 - 
 
 
-## Instructions:
+## Instructions (How to setup this project from scratch):
 1. CRA
 - Install basic example with `npx create-react-app myapp_react1` 
 - Remove style (App.css, and its refs within App.js)
@@ -18,9 +18,28 @@ Here I used the following packages / things:
  
 2. Tailwind
 - Follow instructions [here](https://tailwindcss.com/docs/guides/create-react-app)
-- Do smth in App.js: e.g. remove existing code and add a simple \<h1\> tag with a couple of Tailwind classes.
+- Write code in App.js: e.g. remove existing stuff and add a simple `<h1>` tag with a couple of Tailwind classes.
 
-<<<<<<< HEAD
-=======
-3. 
->>>>>>> 4632e9e30499f26e965ed134e827d666523ee386
+3. React Router 
+- Install the package `npm install react-router-dom@6`
+- Create `src/pages` and `src/components` subfolders
+- Create `Home.js`, `Page.js`, and some common components such as `Header.js`, `Footer.js`, etc. 
+- Add the following code to `App.js` (or index.js, depends on you). Follow [documentation](https://reactrouter.com/docs/en/v6) for more complex examples 
+```
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home'
+import Page from './pages/Page'
+import Header from './components/Header'
+import Footer from './components/Footer'
+...
+...
+<BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />}>
+      <Route path="/page" element={<Page />}>
+    </Routes>
+    <Footer />
+</BrowserRouter>
+```
+
