@@ -23,7 +23,7 @@ Here I used the following packages / things:
 3. React Router 
 - Install the package `npm install react-router-dom@6`
 - Create `src/pages` and `src/components` subfolders
-- Create `Home.js`, `Page.js`, and some common components such as `Header.js`, `Footer.js`, etc. In the common components you can set the [NavLinks menu](https://reactrouter.com/docs/en/v6/components/nav-link)
+- Create `Home.js`, `Page.js`, and some common components such as `Header.js`, `Footer.js`, etc. 
 - Add the following code to `App.js` (or index.js, depends on you). Follow [documentation](https://reactrouter.com/docs/en/v6) for more complex examples 
 ```
 import { BrowserRouter, Routes, Route } from "react-router-dom";
