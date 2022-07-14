@@ -23,7 +23,7 @@ function App() {
   }
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/myapp_react1">
       <UserContext.Provider value={value}>
         <Header />
         <Routes>
