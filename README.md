@@ -2,10 +2,10 @@
 
 This is a demo app, made just for fun...
 
-Here I used the following packages / things:
+Here I used the following packages|libs|things:
 - [CRA](https://create-react-app.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
-- 
+- React Router
 
 
 ## Instructions (How to setup this project from scratch):
@@ -43,3 +43,25 @@ import Footer from './components/Footer'
 </BrowserRouter>
 ```
 
+## Advanced using of React/Router in this app
+
+### useContext
+
+First, set a `UserContext` in `src/components/UserContext.js`: define the shape that the consumers expect!
+
+Second, in `App.js` define the initial value (e.g. by using setState hook). In particular, set the two functions for login and logout. Then wrap nested components with `<UserContext.Provider value={value}>`. 
+
+The Context is used in two components `Header.jsx` and `Login.jsx`. In the header, we control wheather the user is logged and we show the protected page in the menu. On the other hand, in the Login page, we access to the name of the user (if logged) and we can toggle login/logout thanks to the `<UserContext.Consumer>` tag. Note that the argument of the Consumer is a function.
+
+### Protected page(s)
+By using the previous Context we can check the user and `Navigate` to homepage if the user is not logged in. 
+
+
+### Further implementations:
+- Add LocalStorage in order to preserve login status when app is reload
+- Move Context stuff from App.js to a component. 
+- Better understand these examples (if pertinent):
+
+1. [authentication](https://blog.logrocket.com/complete-guide-authentication-with-react-router-v6/)
+
+2. [auth example](https://reactrouter.com/docs/en/v6/examples/auth)
