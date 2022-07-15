@@ -5,7 +5,7 @@ This is a demo app, made just for fun...
 Here I used the following packages|libs|things:
 - [CRA](https://create-react-app.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
-- React Router
+- [React Router](https://reactrouter.com/)
 
 
 ## Instructions (How to setup this project from scratch):
@@ -57,11 +57,13 @@ The Context is used in two components `Header.jsx` and `Login.jsx`. In the heade
 By using the previous Context we can check the user and `Navigate` to homepage if the user is not logged in. 
 
 
+### LocalStorage
+Added the `useLocalStorage` hook to preserve login status when app reloads. 
+
 ### Further implementations:
-- Add LocalStorage in order to preserve login status when app is reload
 - Move Context stuff from App.js to a component. 
 - Better understand these examples (if pertinent):
 
 1. [authentication](https://blog.logrocket.com/complete-guide-authentication-with-react-router-v6/)
-
 2. [auth example](https://reactrouter.com/docs/en/v6/examples/auth)
+
