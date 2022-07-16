@@ -36,8 +36,8 @@ import Footer from './components/Footer'
 <BrowserRouter>
     <Header />
     <Routes>
-      <Route path="/" element={<Home />}>
-      <Route path="/page" element={<Page />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/page" element={<Page />} />
     </Routes>
     <Footer />
 </BrowserRouter>
