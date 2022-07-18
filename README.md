@@ -25,7 +25,8 @@ Here I used the following packages|libs|things:
 - Create `src/pages` and `src/components` subfolders
 - Create `Home.js`, `Page.js`, and some common components such as `Header.js`, `Footer.js`, etc. 
 - Add the following code to `App.js` (or index.js, depends on you). Follow [documentation](https://reactrouter.com/docs/en/v6) for more complex examples 
-```
+
+```js
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import Page from './pages/Page'
