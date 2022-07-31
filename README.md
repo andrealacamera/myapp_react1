@@ -67,4 +67,4 @@ Added the `useLocalStorage` hook to preserve login status when app reloads.
 
 1. [authentication](https://blog.logrocket.com/complete-guide-authentication-with-react-router-v6/)
 2. [auth example](https://reactrouter.com/docs/en/v6/examples/auth)
-
+3. [React JWT Authentication App using RTK Query](https://www.youtube.com/watch?v=Icd-_K7KFrs)
